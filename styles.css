@@ -15,8 +15,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url(bg.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)),
+    url(bg.jpg);
   background-size: cover;
+
 }
 
 .contact .content {
@@ -121,10 +124,10 @@
   color: #666;
 }
 
-.contactForm .inputBox input:focus ~ span,
-.contactForm .inputBox input:valid ~ span,
-.contactForm .inputBox textarea:focus ~ span,
-.contactForm .inputBox textarea:valid ~ span {
+.contactForm .inputBox input:focus~span,
+.contactForm .inputBox input:valid~span,
+.contactForm .inputBox textarea:focus~span,
+.contactForm .inputBox textarea:valid~span {
   color: #e91363;
   font-size: 0.8em;
   transform: translateY(-20px);
@@ -145,10 +148,13 @@
     padding: 50px;
 
   }
+
   .container {
     flex-direction: column;
   }
-  .container .contactInfo, .contactForm {
+
+  .container .contactInfo,
+  .contactForm {
     margin-bottom: 3em;
     width: 100%;
   }

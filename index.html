@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ReZin</title>
+  <script defer src="main.js"></script>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -50,23 +51,24 @@
       </div>
 
       <div class="contactForm">
-        <form action="">
+        <form id="contact-form" action="https://formspree.io/f/mnqlnnoo" method="POST">
           <h2>Send Message</h2>
           <div class="inputBox">
-            <input type="text" name="" required="required">
+            <input type="text" name="username" required="required">
             <span>Full Name</span>
           </div>
           <div class="inputBox">
-            <input type="text" name="" required="required">
+            <input type="text" name="email" required="required">
             <span>Email</span>
           </div>
           <div class="inputBox">
-            <textarea name="" id="" required="required"></textarea>
+            <textarea name="message" id="" required="required"></textarea>
             <span>Type your Message</span>
           </div>
           <div class="inputBox">
-            <input type="submit" name="" required="required" value="send">
+            <input type="submit" name="submitButton" required="required" value="send">
           </div>
+          <div id="status"></div>
         </form>
       </div>
     </div>
