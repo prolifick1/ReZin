@@ -1,20 +1,27 @@
-    var form = document.getElementById("contact-form");
+var form = document.getElementById("contact-form");
 
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var status = document.getElementById("status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-          'Accept': 'application/json'
-        }
-      }).then(response => {
-        status.innerHTML = "Thanks for your submission!";
-        form.reset()
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form"
-      });
+window.onload = function () {
+  var el = document.getElementById('g-recaptcha-response');
+  if (el) {
+    el.setAttribute('required', 'required');
+  }
+}
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+      'Accept': 'application/json'
     }
-    form.addEventListener("submit", handleSubmit)
+  }).then(response => {
+    status.innerHTML = "Thanks for your submission!";
+    form.reset()
+  }).catch(error => {
+    status.innerHTML = "Oops! There was a problem submitting your form"
+  });
+}
+form.addEventListener("submit", handleSubmit)
