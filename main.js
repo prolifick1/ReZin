@@ -8,7 +8,7 @@ window.onload = function () {
 }
 
 async function handleSubmit(event) {
-  event.preventDefault();
+    event.preventDefault();
   var status = document.getElementById("status");
   var data = new FormData(event.target);
   fetch(event.target.action, {

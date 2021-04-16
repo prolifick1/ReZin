@@ -12,16 +12,17 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 0em 2em;
+  margin: 3em 0em;
+  width: 100%;
 }
 
 .donate-wrapper img {
-  width: 10em;
-  margin: 2em;
+  width: 9em;
+
 }
 
 .heading img {
-  height: 6em;
+  height: 2em;
 }
 
 .heading {
@@ -29,7 +30,11 @@
   justify-content: center;
   align-items: center;
   min-height: 10vh;
-  padding: 1em 0;
+  padding: 0.5em 0;
+}
+
+.blurb {
+  line-height: 2.4em;
 }
 
 .contact {
@@ -40,8 +45,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.55)),
     url(bg.jpg);
   background-size: cover;
 
@@ -71,6 +76,87 @@
   color: #fff;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.footer-content {
+  width: 80%;
+}
+
+.main-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.social-media {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.social-media ul {
+  padding-left: 2em;
+  display: flex;
+  width: 100%;
+  list-style: none;
+  color: #01a1b6;
+  justify-content: space-around;
+  text-align: right;
+  align-items: center;
+  min-width: 12em;
+
+}
+
+.bottom-bar {
+  width: 100%;
+  margin-bottom: 6em;
+}
+
+
+
+.footer-logo {
+  min-width: 12em;
+  width: 100%;
+}
+
+.footer-logo img {
+  height: 6em;
+  margin: 3em 0em 0em 1em;
+}
+
+.bottom-bar {
+  display: flex;
+}
+
+.footer-nav {
+  width: 100%;
+}
+
+.footer-nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+
+}
+
+.footer-nav ul li a {
+  text-decoration: none;
+  color: #888;
+  font-size: 0.8em;
+}
+
+.copyright {
+  display: flex;
+  color: rgb(191, 191, 191);
+  width: 100%;
+  justify-content: right;
+}
+
+
 .container {
   width: 100%;
   display: flex;
@@ -94,7 +180,7 @@
 .container .contactInfo .box .icon {
   min-width: 60px;
   height: 60px;
-  background: #fff;
+  background: #e8d8d8;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,6 +200,11 @@
 .container .contactInfo .box .text h3 {
   font-weight: 700;
   color: #00bcd4;
+}
+
+.hr-container {
+  display: flex;
+  justify-content: center;
 }
 
 .contactForm {
@@ -177,6 +268,7 @@
 }
 
 @media (max-width: 991px) {
+
   .contact {
     padding: 50px;
 
@@ -187,20 +279,51 @@
   }
 
   .container .contactInfo,
-  .contactForm, 
-  .donate-wrapper {
+  .contactForm {
     margin-bottom: 3em;
     width: 100%;
   }
+
   .donate-wrapper {
     align-items: center;
+    margin: 3em 0em;
+    width: 100%;
   }
 
   .heading img {
-    height: 9em;
+    height: 2.5em;
   }
 
   .heading {
-    padding: 3em 0;
+    padding: 1em 0;
+  }
+
+  .bottom-bar {
+    flex-direction: column;
+  }
+
+
+  .copyright {
+    justify-content: center;
+    margin-top: 3em;
+  }
+}
+
+@media (max-width: 600px) {
+  .donate-wrapper {
+    padding: 0em 0em;
+  }
+  .main-info {
+    flex-direction: column;
+  }
+  .footer-logo {
+    justify-content: center;
+    text-align: center;
+  }
+  .footer-logo img {
+        margin-left: 0;
+  }
+  .social-media ul {
+    padding: 3em;
   }
 }
