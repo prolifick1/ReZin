@@ -1,6 +1,8 @@
 # ReZin Botanicals Contact Page
 
 <!-- TODO:
-donate banner / link / button
 email address validation
-todo: connect to firebase -->
+connect to firebase 
+background parallax effect
+
+-->
