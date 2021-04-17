@@ -130,6 +130,7 @@ footer {
 
 .bottom-bar {
   display: flex;
+
 }
 
 .footer-nav {
@@ -150,11 +151,9 @@ footer {
 }
 
 .copyright {
-  display: flex;
   color: rgb(191, 191, 191);
   width: 100%;
-  justify-content: right;
-  padding-left: 23%;
+  text-align: right;
 }
 
 
