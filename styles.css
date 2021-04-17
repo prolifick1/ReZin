@@ -276,6 +276,8 @@ footer {
 
   .copyright {
     padding-left: 0;
+    text-align: center;
+
   }
 
   .container {
@@ -310,6 +312,8 @@ footer {
   .copyright {
     justify-content: center;
     margin-top: 3em;
+    text-align: center;
+
   }
 }
 
@@ -317,19 +321,24 @@ footer {
   .donate-wrapper {
     padding: 0em 0em;
   }
+
   .main-info {
     flex-direction: column;
   }
+
   .footer-logo {
     justify-content: center;
     text-align: center;
   }
+
   .footer-logo img {
-        margin-left: 0;
+    margin-left: 0;
   }
+
   .social-media ul {
     padding: 3em;
   }
+
   .copyright {
     padding-left: 0;
   }
