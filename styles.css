@@ -154,6 +154,7 @@ footer {
   color: rgb(191, 191, 191);
   width: 100%;
   justify-content: right;
+  padding-left: 23%;
 }
 
 
@@ -274,6 +275,10 @@ footer {
 
   }
 
+  .copyright {
+    padding-left: 0;
+  }
+
   .container {
     flex-direction: column;
   }
@@ -325,5 +330,8 @@ footer {
   }
   .social-media ul {
     padding: 3em;
+  }
+  .copyright {
+    padding-left: 0;
   }
 }
