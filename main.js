@@ -7,6 +7,10 @@ window.onload = function () {
   }
 }
 
+$(window).scroll(function () {
+  $(".contact").css("background-position", "50% " + ($(this).scrollTop() / 20) + "px");
+});
+
 async function handleSubmit(event) {
     event.preventDefault();
   var status = document.getElementById("status");
