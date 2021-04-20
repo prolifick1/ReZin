@@ -110,8 +110,11 @@ footer {
   justify-content: space-around;
   text-align: right;
   align-items: center;
-  min-width: 12em;
+  min-width: 12em;  
+}
 
+.social-media ul li a {
+  color: inherit;
 }
 
 .bottom-bar {
