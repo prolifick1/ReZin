@@ -1,14 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
-// use avenir or tahoma?, avant garde
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 1.5em;
-  font-family: "Poppins", sans-serif;
+  font-family: "Toma Sans", sans-serif;
 }
+
+.calendly-inline-widget {
+  display: flex;
+  height: 500px;
+  min-width: 320px;
+
+  ._3t7mZz3weV {
+    min-height: 25vh !important;
+  }
+
+  .iSDZ5t7E7z ._2hssQHj_5V {
+    min-height: 20em !important;
+  }
+}
+
 
 .donate-wrapper {
   position: relative;
@@ -45,8 +57,8 @@
   align-items: center;
   flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.65),
-  rgba(0, 0, 0, 0.65)),
-  url(bg-desktop.jpg);
+      rgba(0, 0, 0, 0.65)),
+    url(bg-desktop.jpg);
   background-size: cover;
   background-repeat: repeat;
   background-position: 50% 0;
@@ -68,6 +80,87 @@
       color: #FFFFFF;
     }
   }
+}
+
+.newsletter {
+  display: flex;
+  background: #111;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: 50% 0;
+  color: white;
+  min-height: 500px;
+  justify-content: center;
+  align-items: center;
+
+  input {
+    width: 100%;
+
+    input:focus~span,
+    input:valid~span,
+    textarea:focus~span,
+    textarea:valid~span {
+      color: #E91363;
+      font-size: 0.8em;
+      transform: translateY(-20px);
+    }
+  }
+
+  .newsletter-content {
+    p {
+      padding-top: 1em;
+    }
+
+    text-align: center;
+    width: 50%;
+    max-width: 35em;
+
+    input[name="email"] {
+      margin-top: 3em;
+      border: none;
+      background-color: transparent;
+      color: white;
+      border-bottom: 1px solid white;
+      padding-bottom: 1em;
+    }
+
+    input[name="email"]:focus {
+      outline: none;
+    }
+
+    input[name="submitButton"] {
+      margin-top: 3em;
+      padding: 1em 1.5em;
+      background-color: red;
+      color: white;
+      letter-spacing: 0.5em;
+      width: 100%;
+      border: none;
+      cursor: pointer;
+
+    }
+
+    .terms {
+      padding-top: 1.5em;
+      display: flex;
+      text-align: left;
+      flex-direction: row;
+    }
+
+    input[name="checkbox"] {
+      padding: 1.5em;
+      background-color: red;
+      color: white;
+      letter-spacing: 0.5em;
+      min-width: 1em;
+    }
+
+    span {
+      padding-left: 0.5rem;
+
+    }
+  }
+
 }
 
 #g-recaptcha-response {
@@ -200,7 +293,6 @@ footer {
   }
 }
 
-
 .hr-container {
   display: flex;
   justify-content: center;
@@ -232,7 +324,10 @@ footer {
     width: 100%;
     margin-top: 1.2em;
 
-    input:focus ~ span, input:valid ~ span, textarea:focus ~ span, textarea:valid ~ span {
+    input:focus~span,
+    input:valid~span,
+    textarea:focus~span,
+    textarea:valid~span {
       color: #E91363;
       font-size: 0.8em;
       transform: translateY(-20px);
@@ -249,7 +344,8 @@ footer {
       color: #666666;
     }
 
-    input, textarea {
+    input,
+    textarea {
       color: #444444;
       width: 100%;
       padding: 5px 0;
@@ -279,7 +375,8 @@ footer {
     flex-direction: column;
   }
 
-  .container .contactInfo, .contactForm {
+  .container .contactInfo,
+  .contactForm {
     margin-bottom: 3em;
     width: 100%;
   }
@@ -289,6 +386,7 @@ footer {
     margin: 3em 0;
     width: 100%;
   }
+
 
   .heading img {
     height: 2.5em;

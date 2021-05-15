@@ -1,9 +1,20 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Toma Sans", sans-serif;
+}
+
+.calendly-inline-widget {
+  display: flex;
+  height: 500px;
+  min-width: 320px;
+}
+.calendly-inline-widget ._3t7mZz3weV {
+  min-height: 25vh !important;
+}
+.calendly-inline-widget .iSDZ5t7E7z ._2hssQHj_5V {
+  min-height: 20em !important;
 }
 
 .donate-wrapper {
@@ -56,6 +67,74 @@
   line-height: 2.4em;
   font-weight: 300;
   color: #FFFFFF;
+}
+
+.newsletter {
+  display: flex;
+  background: #111;
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: 50% 0;
+  color: white;
+  min-height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+.newsletter input {
+  width: 100%;
+}
+.newsletter input input:focus ~ span,
+.newsletter input input:valid ~ span,
+.newsletter input textarea:focus ~ span,
+.newsletter input textarea:valid ~ span {
+  color: #E91363;
+  font-size: 0.8em;
+  transform: translateY(-20px);
+}
+.newsletter .newsletter-content {
+  text-align: center;
+  width: 50%;
+  max-width: 35em;
+}
+.newsletter .newsletter-content p {
+  padding-top: 1em;
+}
+.newsletter .newsletter-content input[name=email] {
+  margin-top: 3em;
+  border: none;
+  background-color: transparent;
+  color: white;
+  border-bottom: 1px solid white;
+  padding-bottom: 1em;
+}
+.newsletter .newsletter-content input[name=email]:focus {
+  outline: none;
+}
+.newsletter .newsletter-content input[name=submitButton] {
+  margin-top: 3em;
+  padding: 1em 1.5em;
+  background-color: red;
+  color: white;
+  letter-spacing: 0.5em;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+.newsletter .newsletter-content .terms {
+  padding-top: 1.5em;
+  display: flex;
+  text-align: left;
+  flex-direction: row;
+}
+.newsletter .newsletter-content input[name=checkbox] {
+  padding: 1.5em;
+  background-color: red;
+  color: white;
+  letter-spacing: 0.5em;
+  min-width: 1em;
+}
+.newsletter .newsletter-content span {
+  padding-left: 0.5rem;
 }
 
 #g-recaptcha-response {
@@ -201,7 +280,10 @@ footer .copyright {
   padding: 10px;
   font-size: 1.2rem;
 }
-.contactForm .inputBox input:focus ~ span, .contactForm .inputBox input:valid ~ span, .contactForm .inputBox textarea:focus ~ span, .contactForm .inputBox textarea:valid ~ span {
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
   color: #E91363;
   font-size: 0.8em;
   transform: translateY(-20px);
@@ -216,7 +298,8 @@ footer .copyright {
   transition: 0.5s;
   color: #666666;
 }
-.contactForm .inputBox input, .contactForm .inputBox textarea {
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
   color: #444444;
   width: 100%;
   padding: 5px 0;
@@ -242,7 +325,8 @@ footer .copyright {
     flex-direction: column;
   }
 
-  .container .contactInfo, .contactForm {
+  .container .contactInfo,
+.contactForm {
     margin-bottom: 3em;
     width: 100%;
   }

@@ -1,6 +1,20 @@
 var form = document.getElementById("contact-form");
 
+
+$(window).on('load', function () {
+  $('#welcome').modal('show');
+});
+
+
 window.onload = function () {
+  Calendly.initBadgeWidget({
+    url: 'https://calendly.com/rezinbotanicals',
+    text: 'Schedule time with us',
+    color: '#00a2ff',
+    textColor: '#ffffff',
+    branding: true
+  });
+
   var el = document.getElementById('g-recaptcha-response');
   if (el) {
     el.setAttribute('required', 'required');
@@ -12,7 +26,7 @@ $(window).scroll(function () {
 });
 
 async function handleSubmit(event) {
-    event.preventDefault();
+  event.preventDefault();
   var status = document.getElementById("status");
   var data = new FormData(event.target);
   fetch(event.target.action, {
