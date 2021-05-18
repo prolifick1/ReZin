@@ -5,6 +5,10 @@
   font-family: "Toma Sans", sans-serif;
 }
 
+.modal-body {
+  text-align: center;
+}
+
 .calendly-inline-widget {
   display: flex;
   height: 500px;
