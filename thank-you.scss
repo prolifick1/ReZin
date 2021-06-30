@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Toma Sans", sans-serif;
+}
+
+.heading {
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh;
+  padding: 0.5em 0;
+
+  img {
+    height: 2em;
+  }
+}
+
+h1 {
+  padding: 3em 0 2em 0;
+  text-align: center;
+  color: rgb(65, 64, 64)
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+}
+
+div.logo-container {
+  height: 15em;
+  width: auto;
+  padding-top: 5em;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 10em;
+
+  .footer-content {
+    width: 80%;
+
+
+    .main-info {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+    }
+
+    .donate-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin: 3em 0;
+      width: 100%;
+
+      img {
+        width: 9em;
+      }
+    }
+
+
+    .social-media {
+      display: flex;
+      width: 100%;
+      justify-content: end;
+
+      ul {
+        padding-left: 2em;
+        display: flex;
+        width: 100%;
+        list-style: none;
+        color: #01A1B6;
+        justify-content: space-around;
+        text-align: right;
+        align-items: center;
+        min-width: 12em;
+
+        li a {
+          color: inherit;
+        }
+      }
+    }
+  }
+
+  .footer-nav {
+    width: 100%;
+  }
+
+  .footer-nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+    li a {
+      text-decoration: none;
+      color: #888888;
+      font-size: 0.8em;
+    }
+  }
+
+  .copyright {
+    color: rgb(191, 191, 191);
+    width: 100%;
+    text-align: right;
+  }
+}
+
+.bottom-bar {
+  width: 100%;
+  margin-bottom: 6em;
+  display: flex;
+}
+
+
+.footer-logo {
+  min-width: 12em;
+  width: 100%;
+
+  img {
+    height: 6em;
+    margin: 3em 0 0 1em;
+  }
+}
