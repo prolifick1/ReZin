@@ -5,6 +5,24 @@
   font-family: "Toma Sans", sans-serif;
 }
 
+.seed {
+  width: 50px;
+  height: 50px;
+  animation: glow 1s infinite alternate;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background: url("https://api.iconify.design/noto-seedling.svg") no-repeat center center/contain;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px #aef4af;
+  }
+  to {
+    box-shadow: 0 0 10px 10px #aef4af;
+  }
+}
 .modal-body {
   text-align: center;
 }
