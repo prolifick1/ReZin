@@ -5,14 +5,59 @@
   font-family: "Toma Sans", sans-serif;
 }
 
+
+.contact-bar {
+  padding: 1em 0em;
+  background: #252D39;
+  color: white;
+  font-size: 1em;
+  line-height: 2em;
+
+  div.contact-social-media {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-icons {
+    display: flex;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .icon {
+    padding-left: 1em;
+  }
+
+  .contact-bar-email {
+    padding-right: 1em;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .contact-bar-phone {
+    padding-left: 1em;
+    color: #86C33A;
+  }
+
+  .contact-standard {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+
 .seed {
   width: 50px;
   height: 50px;
   animation: glow 1s infinite alternate;
   position: absolute;
-  top: 1em;
+  top: 1.2em;
   right: 1em;
-  background: url('https://api.iconify.design/noto-seedling.svg') no-repeat center center / contain;
+  background: url('seedling.png') no-repeat center center / contain;
 }
 
 @keyframes glow {
