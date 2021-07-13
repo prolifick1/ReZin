@@ -17,10 +17,11 @@
   height: 2em;
 }
 
-h1 {
+.blurb {
   padding: 3em 0 2em 0;
   text-align: center;
   color: #414040;
+  line-height: 2em;
 }
 
 img {
