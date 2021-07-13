@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" href="thank-you.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -19,31 +20,49 @@
   </section>
   <h1>Thank You!</h1>
   <div class="all-logos">
-    <div class="logo-container">
+    <div class="logo-container" data-aos="fade-in">
       <a href="https://humboldtseedcompany.com/">
         <img src="./logo-humboldt.png" alt="Humboldt">
       </a>
     </div>
-    <a href="https://hokuseedco.com/">
-      <div class="logo-container">
-        <img src="./logo-hoku.jpg" alt="hoku">
-      </div>
-    </a>
-    <a href="https://mtzionseeds.com/">
-      <div class="logo-container">
-        <img src="./logo-mtZion.jpg" alt="Mt Zion">
-      </div>
-    </a>
-    <a href="https://hokuseedco.com/shop#!/Hill-Family-Genetics/c/49835219">
-      <div class="logo-container">
-        <img src="./logo-skunkerton.png" alt="Hill Family Genetics">
-      </div>
-    </a>
 
-    <div class="logo-container">
-      <img src="./logo-nnGenetics.jpg" alt="NN Genetics">
+    <div class="logo-container" data-aos="fade-up"> <a href="https://hokuseedco.com/">
+        <div class="logo-container">
+          <img src="./logo-hoku.jpg" alt="hoku">
+        </div>
+      </a>
+    </div>
+    <div class="logo-container" data-aos="fade-up">
+      <a href="https://seedcanary.com/">
+        <div class="logo-container">
+          <img src="./logo-seedCanary.png" alt="Mt Zion">
+        </div>
+      </a>
+    </div>
+    <div class="logo-container" data-aos="fade-up">
+      <a href="https://mtzionseeds.com/">
+        <div class="logo-container">
+          <img src="./logo-mtZion.png" alt="Mt Zion">
+        </div>
+      </a>
+
+    </div>
+    <div class="logo-container" data-aos="fade-up">
+      <a href="https://hokuseedco.com/shop#!/Hill-Family-Genetics/c/49835219">
+        <div class="logo-container">
+          <img src="./logo-skunkerton.png" alt="Hill Family Genetics">
+        </div>
+      </a>
+    </div>
+    <div class="logo-container" data-aos="fade-up">
+      <a href="https://www.instagram.com/nuttynorthgenetics/">
+        <div class="logo-container">
+          <img src="./logo-nnGenetics.jpg" alt="NN Genetics">
+        </div>
+      </a>
     </div>
   </div>
+
 
   <footer>
     <div class="footer-content">
@@ -71,7 +90,13 @@
     </div>
   </footer>
 
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      offset: 300,
+      duration: 1000
+    });
+  </script>
 </body>
 
 </html>

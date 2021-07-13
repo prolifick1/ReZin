@@ -51,22 +51,23 @@
 
 
 .seed {
-  width: 50px;
-  height: 50px;
+  width: 2em;
+  height: 2em;
   animation: glow 1s infinite alternate;
   position: absolute;
-  top: 1.2em;
+  top: 5em;
   right: 1em;
+  border-radius: 50px;
   background: url('seedling.png') no-repeat center center / contain;
 }
 
 @keyframes glow {
   from {
-    box-shadow: 0 0 10px -10px #aef4af;
+    box-shadow: 0 0 0.3em -0.3em #aef4af;
   }
 
   to {
-    box-shadow: 0 0 10px 10px #aef4af;
+    box-shadow: 0 0 0.2em 0.2em #aef4af;
   }
 }
 
